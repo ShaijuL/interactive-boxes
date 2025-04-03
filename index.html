@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Product Selection</title>
+    <link rel="stylesheet" href="T styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">  Buy More, Save More </div>
+        
+        <!-- 1 Unit Box -->
+        <div class="box" onclick="selectBox(this)">
+            <input type="radio" name="package"> 1 Unit <span class="discount">10% Off</span>
+            <div class="price">₹800 <span class="old-price">₹2,000</span></div>
+            <div class="details">
+                <label>Size:</label>
+                <select>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                </select>
+                <label>Color:</label>
+                <select>
+                    <option>Black</option>
+                    <option>White</option>
+                    <option>Blue</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- 2 Unit Box (Most Popular) -->
+        <div class="box most-popular" onclick="selectBox(this)">
+            <input type="radio" name="package"> 2 Unit <span class="discount">20% Off</span>
+            <div class="price">₹1,440 <span class="old-price">₹2,000</span></div>
+            <div class="details">
+                <div>
+                    <label>1 Size:</label>
+                    <select>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                    </select>
+                    <label>Color:</label>
+                    <select>
+                        <option>Black</option>
+                        <option>White</option>
+                        <option>Blue</option>
+                    </select>
+                </div>
+                <div>
+                    <label>2 Size:</label>
+                    <select>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                    </select>
+                    <label>Color:</label>
+                    <select>
+                        <option>Black</option>
+                        <option>White</option>
+                        <option>Blue</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3 Unit Box -->
+        <div class="box" onclick="selectBox(this)">
+            <input type="radio" name="package"> 3 Unit <span class="discount">30% Off</span>
+            <div class="price">₹1,800 <span class="old-price">₹2,000</span></div>
+            <div class="details">
+                <label>1 Size:</label>
+                <select>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                </select>
+                <label>Color:</label>
+                <select>
+                    <option>Black</option>
+                    <option>White</option>
+                    <option>Blue</option>
+                </select>
+                <br>
+                <label>2 Size:</label>
+                <select>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                </select>
+                <label>Color:</label>
+                <select>
+                    <option>Black</option>
+                    <option>White</option>
+                    <option>Blue</option>
+                </select>
+                <br>
+                <label>3 Size:</label>
+                <select>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                </select>
+                <label>Color:</label>
+                <select>
+                    <option>Black</option>
+                    <option>White</option>
+                    <option>Blue</option>
+                </select>
+            </div>
+        </div>
+
+        <button class="add-to-cart"> Add to Cart</button>
+    </div>
+
+    <script src="T script.js"></script>
+</body>
+</html>
